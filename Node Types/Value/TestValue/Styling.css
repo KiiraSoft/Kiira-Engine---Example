@@ -1,0 +1,9 @@
+/* This style sheet modifies the node further than the default styling in the main style sheet. this is mainly to differentiate each node, so they can have icons of their own, unique colors, etc. */
+
+#Example#Node
+{
+width:92px;
+height:92px;
+background:#ffffff;
+border-radius:92px
+}

@@ -1,0 +1,90 @@
+ <!DOCTYPE HTML>
+<html>
+<head>
+<title>Kiira Engine</title>
+
+<!-- This styling makes the Jquery UI elements work correctly -->
+<link rel="stylesheet" href="Style/Jquery/jquery.ui.all.css">
+
+<!-- These scripts are what controls the project -->
+<script src="script/Jquery/Jquery-1.11.0.js"></script>
+<script src="script/Jquery/jquery.ui.core.js"></script>
+<script src="script/Jquery/jquery.ui.widget.js"></script>
+<script src="script/Jquery/jquery.ui.mouse.js"></script>
+<script src="script/Jquery/jquery.ui.resizable.js"></script>
+<script src="script/Jquery/jquery.ui.accordion.js"></script>
+<script src="script/Jquery/jquery.ui.draggable.js"></script>
+<script language="JavaScript" type="text/javascript" src="/script/Kiira/Node Creation.js"></script>
+<script language="JavaScript" type="text/javascript" src="/script/Kiira/XML Parser.js"></script>
+<script src="script/Kiira/Styling.js"></script>
+
+
+<!-- These style sheets assign the default appearance of the app -->
+<link rel="stylesheet" type="text/css" href="Style/Main Styling.css">
+
+
+</head>
+
+<body>
+<div id="app">
+<!-- This is the header, which contains operations such as file, edit, help, etc. -->
+<div id="header" class="header">
+</div>
+
+<!-- This is the block in the layout that is put on the right, with properties and the viewport -->
+
+	<!-- The object that contains the viewport and it's handle -->
+	<div id="ViewportObject" class="object">
+		<!-- This handles the frame that contains the project viewport's position -->
+		<div id="ViewportHandler" class="handle">
+			<p>
+				Project Viewport
+			</p>
+		</div>
+	
+		<!-- Create the frame that contains the software so far -->
+		<div id="ProjectViewport">
+		<iframe id="Viewport" href="Viewport.html"></iframe>
+		</div>
+	</div>	
+
+	<!-- The object that contains the properties of whatever node is selected -->
+	<div id="PropertiesObject" class="object">
+		<!-- This handles the properties' object position -->
+		<div id="PropertiesHandler" class="handle">
+			<p>
+				Node Properties
+			</p>
+		</div>
+
+		<!-- Create the property list for the node selected -->
+		<div id="properties" class="propertiesList">
+		
+		</div>
+	</div>
+
+	<!-- The object that contains the library and it's content -->
+	<div id="LibraryObject" class="object">
+		<!-- This handles the library's position -->
+		<div id="LibraryHandler" class="handle">
+			<p>
+				Node Library
+			</p>
+		</div>
+
+		<!-- The node library will include all the nodes, loaded by using javascript and xml to write to the DOM -->
+		<div id="nodeLibrary" class="library">
+		</div>
+	</div>
+
+<div id="footer" class="footer">
+</div>
+
+
+<div id="usersScreen" class="screen">
+<div id="project sheet" class="sheet">
+
+</div>
+</div>
+</div>
+</body>

@@ -1,0 +1,26 @@
+//Parses the information inside the Project.xml so it can be read and modified. This allows the system to save the nodes on the project with their types, UIDs, position, and other important information. This also includes the properties set by the user.
+
+if (window.XMLHttpRequest)
+  {
+  xhttp=new XMLHttpRequest();
+  }
+else // code for IE5 and IE6
+  {
+  xhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+xhttp.open("GET","../Project.xml",false);
+xhttp.send();
+xmlDoc=xhttp.responseXML; 
+
+//This xml parser code reads the nodeTypes.xml so the system can find the different nodes that are in currently in the folders. Every time one is uploaded it is pushed inside the xml as an element, and then read through this Javascript file in real time.
+if (window.XMLHttpRequest)
+  {
+  xhttp=new XMLHttpRequest();
+  }
+else // code for IE5 and IE6
+  {
+  xhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+xhttp.open("GET","../Node Types/nodeTypes.xml",false);
+xhttp.send();
+xmlDoc=xhttp.responseXML; 

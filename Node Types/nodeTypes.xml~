@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<value>
+	<node name="TestNode" location="Value/Test Value.xml">
+	</node>
+</value>
+
+<builder>
+
+</builder>
+
+<property>
+
+</property>
+
+<vector>
+
+</vector>

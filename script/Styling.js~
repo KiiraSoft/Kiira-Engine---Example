@@ -1,0 +1,28 @@
+//This javascript files adds more to the styling so the user can modify the layout of their Engine screen a little bit.
+
+//This allows the user to resize the library and it's contents so that it can either be seen better, or not be in the way.
+	$(function() {
+		$( ".library" ).resizable({
+			handles: "e",
+			minWidth: 94,
+
+		});
+	}); 
+
+
+	$(function() {
+		$( ".rightPanel" ).resizable({
+			handles: "w",
+			minWidth: 243,
+		});
+	});
+
+	$(function() {
+		$( ".screen" ).resizable({
+			handles: "e, w",
+			minWidth: 640,
+
+		});
+	}); 
+
+

@@ -1,0 +1,26 @@
+//check for a node and then write it's elements to the screen with it's styling aplied
+
+//These variables calls insert XML's to the javascript so they can be used to read and write to them.
+//---This javascript file writes to the Project.xml whenever a node is created and writes it's default information inside of it so it can be used later on.
+//---The other XML, which is nodeTypes, is loaded up so that it can check which node is being sent to the Project.
+var ProjectXML=loadXMLDoc("../Project.xml");
+var nodeTypesXML=loadXMLDoc("../Node Types/nodeTypes.xml");
+var XMLlength = nodeTypesXML.getElementsByTagName("node").length;
+var nodes = [];
+var nodes.position;
+var currentNode;
+
+function createNode(nodeName)
+{
+	for (i = 0; i < XMLlength; i++)
+	{
+		if (nodeTypesXML.getAttribute('name') = nodeName)
+		{
+			currentNode = nodes.push() = ProjectXML.createElement("node");
+			currentNode.setAttribute("name",nodeName);
+			currentNode.setAttribute("type", noteTypesXML.getAttribute('value'));
+			currentNode.setAttribute("UID", Math.random());
+		};
+	};
+	
+};

@@ -1,0 +1,6 @@
+//check for a node and then write it's elements to the screen with it's styling aplied
+xmlDoc=loadXMLDoc("../Project.xml");
+
+document.write(xmlDoc.getElementsByTagName("node")[0].childNodes[0].nodeValue + "<br>");
+document.write(xmlDoc.getElementsByTagName("author")[0].childNodes[0].nodeValue + "<br>");
+document.write(xmlDoc.getElementsByTagName("year")[0].childNodes[0].nodeValue);

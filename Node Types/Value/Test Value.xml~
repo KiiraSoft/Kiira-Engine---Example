@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<node>
+	<!-- the node's UID -->
+	<UID>
+	
+	</UID>	
+
+	<!-- the type of node this is -->
+	<type>
+		value
+	</type>
+
+	<!-- This allows for extra styling of nodes, so the user can customize the appearance of them -->
+	<styling>
+		TestValue/styling.css
+	</styling>
+
+	<!-- The title of this node -->
+	<title>
+		Example Node
+	</title>
+
+	<item>
+		
+	</item>
+	
+	<!-- The code that will be written to the document if the project is exported to HTML5 -->
+	<HTML5>
+	var exampleValue;
+	</HTML5>
+	
+	<!-- The code that will be written to the document if the project is exported to Visual Basic -->
+	<VB>
+	dim exampleValue as integer
+	</VB>
+	
+	<!-- Property command allows the user to customize the node by typing in a value -->
+	<property>
+		<!-- The name of this set property -->
+		<propertyName>
+			value
+		</propertyName>
+		
+		<!-- The default value for this property -->
+		<propertyValue>
+			0
+		</propertyValue>
+	</property>
+
+
+</node>
